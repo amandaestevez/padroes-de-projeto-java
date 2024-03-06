@@ -1,10 +1,12 @@
 /**
  * Pacote base do projeto, contendo classes relacionadas ao padrão de projeto Singleton.
  */
-package one.digitalinnovation.gof.singleton;
+package padroes-de-projeto-java;
 
 /**
- * Classe que implementa o padrão "Lazy Singleton".
+ * 
+ * @author: amandaestevez
+ * Classe que implementa o padrão "Singleton Lazy".
  * 
  * A instância única da classe é criada somente quando o método "getInstancia" é chamado pela primeira vez.
  * 
@@ -12,7 +14,7 @@ package one.digitalinnovation.gof.singleton;
 public class SingletonLazy {
 
     /**
-     * Referência privada para a instância única da classe.
+     * Referência privada para a instância única da classe Singleton
      * 
      * Inicialmente nula, pois a instanciação é adiada (lazy).
      */
