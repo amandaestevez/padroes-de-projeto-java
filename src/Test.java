@@ -29,7 +29,7 @@ public class Test {
          * será criada na primeira chamada ao método `getInstancia` criado dentro da classe Singleton Lazy.
          */
         SingletonLazy lazy = SingletonLazy.getInstancia();
-        System.out.println(lazy); // Imprime a referência da instância Lazy
+        System.out.println(lazy.toString()); // Imprime a referência da instância Lazy
 
         /**
          * Tenta obter a instância do Singleton Lazy novamente, mas como ela já 
@@ -37,6 +37,7 @@ public class Test {
          */
         lazy = SingletonLazy.getInstancia();
         System.out.println(lazy); // Imprime a referência (provavelmente a mesma) da instância Lazy
+
 
         // Testando Singleton Eager
 
