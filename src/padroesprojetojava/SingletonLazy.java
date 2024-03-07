@@ -6,7 +6,7 @@ public class SingletonLazy {
  * A instância única da classe é criada somente quando o método "getInstancia" é chamado pela primeira vez.
  * 
  */
-private static SingletonLazy instancia;
+    private static SingletonLazy instancia;
 /**
  * Referência privada para a instância única da classe Singleton
  * 
