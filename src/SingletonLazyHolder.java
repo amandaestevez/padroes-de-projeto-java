@@ -1,3 +1,6 @@
+
+package padroesprojetojava
+
 /**
  * Classe que implementa o padrão Singleton "Lazy Holder".
  * 

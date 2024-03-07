@@ -1,7 +1,7 @@
 /**
  * Pacote base do projeto, contendo classes relacionadas ao padrão de projeto Singleton.
  */
-package padroes-de-projeto-java;
+package padroesprojetojava;
 
 /**
  * Classe que implementa o padrão "Singleton Eager".

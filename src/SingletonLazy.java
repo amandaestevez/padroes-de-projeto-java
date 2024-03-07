@@ -1,35 +1,39 @@
+package padroesprojetojava;
 /**
  * Pacote base do projeto, contendo classes relacionadas ao padrão de projeto Singleton.
- */
-package padroes-de-projeto-java;
-
-/**
  * 
  * @author: amandaestevez
+ */
+ 
+
+public class SingletonLazy {
+/*
  * Classe que implementa o padrão "Singleton Lazy".
- * 
  * A instância única da classe é criada somente quando o método "getInstancia" é chamado pela primeira vez.
  * 
  */
-
-public class SingletonLazy {
-
-    /**
+	    private static SingletonLazy instancia;
+	/**
      * Referência privada para a instância única da classe Singleton
      * 
      * Inicialmente nula, pois a instanciação é adiada (lazy).
      */
-	    private static SingletonLazy instancia;
-	
+
+	    private SingletonLazy() {
+		  super();
+	}
 	/**
 	 * Construtor privado para evitar a instanciação direta da classe.
 	 * 
 	 * O construtor privado garante que a classe só possa ser instanciada através do método `getInstancia`.
 	 */
-	    private SingletonLazy() {
-		  super();
-	}
 	
+	    public static SingletonLazy getInstancia() {
+		    if (instancia == null) {
+			instancia = new SingletonLazy();
+		}
+		    return instancia;
+	}
 	/**
 	 * Método público estático que retorna a instância única da classe.
 	 * 
@@ -39,10 +43,4 @@ public class SingletonLazy {
 	 * 
 	 * retorna A instância única da classe SingletonLazy.
 	 */
-	public static SingletonLazy getInstancia() {
-		if (instancia == null) {
-			instancia = new SingletonLazy();
-		}
-		return instancia;
-	}
 }
