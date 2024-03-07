@@ -1,9 +1,4 @@
 /**
- * Pacote base do projeto, contendo classes relacionadas aos padrões de projeto.
- */
-package padroes-de-projeto-java;
-
-/**
  * Classe que implementa o padrão Singleton "Lazy Holder".
  * 
  * A instância única da classe é criada somente quando o método `getInstancia` é chamado pela primeira vez.
@@ -11,19 +6,17 @@ package padroes-de-projeto-java;
  * Esta implementação utiliza a técnica "Holder" para garantir a inicialização lazy da instância.
  * 
  * @author amandaestevez
- */
-public class SingletonLazyHolder {
+*/
 
-    /**
-     * Classe interna estática aninhada que encapsula a instância única da classe SingletonLazyHolder.
-     * 
-     * A classe interna é estática para garantir que a instância seja criada apenas uma vez, 
-     * mesmo que a classe externa seja instanciada várias vezes.
-     */
-	private static class InstanceHolder {
-		/**
-		 * A instância única da classe SingletonLazyHolder.
-		 * 
+public class SingletonLazyHolder {
+/**
+* Classe interna estática aninhada que encapsula a instância única da classe SingletonLazyHolder.
+* A classe interna é estática para garantir que a instância seja criada apenas uma vez, 
+* mesmo que a classe externa seja instanciada várias vezes.
+*/
+
+    private static class InstanceHolder {
+		/** A instância única da classe SingletonLazyHolder. 
 		 * É inicializada apenas quando a classe interna InstanceHolder é carregada pela JVM.
 		 */
 		public static SingletonLazyHolder instancia = new SingletonLazyHolder();
@@ -45,7 +38,7 @@ public class SingletonLazyHolder {
 	 * 
 	 * Em qualquer caso, o método retorna a instância existente.
 	 * 
-	 * @return A instância única da classe SingletonLazyHolder.
+	 * retorna A instância única da classe SingletonLazyHolder.
 	 */
 	public static SingletonLazyHolder getInstancia() {
 		return InstanceHolder.instancia;

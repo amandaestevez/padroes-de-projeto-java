@@ -1,9 +1,10 @@
-// Importações das classes SingletonEager, SingletonLazy e SingletonLazyHolder para fazer o teste
+/* Importações das classes SingletonEager, SingletonLazy e SingletonLazyHolder para fazer o teste */
+
 import SingletonEager;
 import SingletonLazy;
 import SingletonLazyHolder;
 
-package padroes-de-projeto-java;
+package padroes;
 
 /**
  * @author amandaestevez
@@ -81,4 +82,3 @@ public class Test {
         lazyHolder = SingletonLazyHolder.getInstancia();
         System.out.println(lazyHolder); // Imprime a referência (provavelmente a mesma) da instância LazyHolder
     }
-}

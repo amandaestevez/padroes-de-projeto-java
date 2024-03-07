@@ -11,6 +11,7 @@ package padroes-de-projeto-java;
  * A instância única da classe é criada somente quando o método "getInstancia" é chamado pela primeira vez.
  * 
  */
+
 public class SingletonLazy {
 
     /**
@@ -18,15 +19,15 @@ public class SingletonLazy {
      * 
      * Inicialmente nula, pois a instanciação é adiada (lazy).
      */
-	private static SingletonLazy instancia;
+	    private static SingletonLazy instancia;
 	
 	/**
 	 * Construtor privado para evitar a instanciação direta da classe.
 	 * 
 	 * O construtor privado garante que a classe só possa ser instanciada através do método `getInstancia`.
 	 */
-	private SingletonLazy() {
-		super();
+	    private SingletonLazy() {
+		  super();
 	}
 	
 	/**
@@ -36,7 +37,7 @@ public class SingletonLazy {
 	 * 
 	 * Em qualquer caso, o método retorna a instância existente.
 	 * 
-	 * @return A instância única da classe SingletonLazy.
+	 * retorna A instância única da classe SingletonLazy.
 	 */
 	public static SingletonLazy getInstancia() {
 		if (instancia == null) {
