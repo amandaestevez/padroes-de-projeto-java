@@ -1,4 +1,4 @@
-package padroesprojetojava;
+package padroesprojetojava.Singleton;
 
 public class SingletonLazy {
 /*
