@@ -1,4 +1,4 @@
-package padroesprojetojava.Strategy;
+package padroesprojetojava.strategy;
 
 public class Robo {
 
