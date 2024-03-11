@@ -1,6 +1,10 @@
 package padroesprojetojava.Strategy;
 
-import one.digitalinnovation.gof.strategy.Robo;
+import padroesprojetojava.Strategy.Robo;
+import padroesprojetojava.Strategy.ComportamentoAgressivo;
+import padroesprojetojava.Strategy.ComportamentoDefensivo;
+import padroesprojetojava.Strategy.ComportamentoNormal;
+
 public class TestRobo {
     public static void main(String[] args) {
 
@@ -10,6 +14,14 @@ public class TestRobo {
 
         Robo robo = new Robo();
         robo.setComportamento(normal);
+
+        robo.mover();
+
+        robo.setComportamento(agressivo);
+
+        robo.mover();
+
+        robo.setComportamento(defensivo);
 
         robo.mover();
     }
