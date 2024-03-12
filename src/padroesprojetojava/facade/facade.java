@@ -1,5 +1,7 @@
 package padroesprojetojava.facade;
 
-public class facade {
-
+public class Facade {
+    
+    public void migrarCliente(String nome, String cep) {
+    }
 }
